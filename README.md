@@ -427,7 +427,7 @@ Before the title is a little link to a forum directory, in which you can write w
 ## Other small details
 - Missing a closing `</div>` block somewhere can really mess up the formatting, so be careful!
 - The avatar file size is roughly 50px by 50px. Any image used as an avatar will be automatically resized.
-- The spacing can get slightly misaligned if the Username is long enough to wrap. To solve this I just made the font size smaller. There is a more elegant solution somewhere.
+- The spacing can get slightly misaligned if the Username is long enough to wrap. There is probably a fix somewhere, but I'm too lazy to hunt it down.
 - The css was created by cutting up images and using them as background elements...... I then decided to hardcode margins to space everything out properly.
 - I hate css.
 - I like writing a lot more. Go read [my fic!](https://archiveofourown.org/works/90083486)
