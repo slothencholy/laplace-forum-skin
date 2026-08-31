@@ -1,0 +1,305 @@
+.blank {
+  /* gets rid of annoying ao3 whitespace */
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+.header { 
+  /* used for header, should replace with background:before */
+  width: 100%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.background {
+  /* wraps entire page with textured laplace bg */
+  margin: 0;
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/background.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  padding: 0px 20px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+}
+
+.main > * {
+  min-width: 0;
+}
+
+/* 
+displays elements within the flex display
+*/
+.post {
+  display: flex;
+  position: relative;
+  min-width: 0;
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/main-bg.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  padding-left: 5.5%;
+  padding-right: 1%;
+}
+.body {
+  flex: 1 1 auto;
+  min-width: 0;
+  position: relative;
+}
+
+.breadcrumb {
+  /* displays link before page */
+  padding: 20px 2%;
+  color: rgb(116, 33, 0);
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/*
+title: for title of a single post. sets up main post after.
+*/
+.title:before {
+  content: "";
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/title-top.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left:0;
+  bottom: 100%;
+}
+
+.title {
+  padding-left: 4%;
+  padding-right: 4%;
+  font-size: 22px;
+  color: #000000;
+  position:relative;
+
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/title-bg.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  margin-bottom: 158px;
+}
+
+.title:after {
+  content: "";
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/title-bottom.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  vertical-align: top;
+  left: 0;
+  top:100%;
+}
+
+/* 
+For the main post on the forum. no :before element as it's handled by user section
+*/
+.mainpost {
+  margin-bottom: 210px;
+}
+
+.mainpost:after {
+  content: "";
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/main-reply.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 87px;
+  position: absolute;
+  left:0;
+  top: 100%;
+}
+
+/* formats the text messages of each comment/post */
+.innerbody {
+  padding-left: 2%;
+  padding-right: 4%;
+  overflow-wrap: break-word;
+  padding-top: 0px;
+  font-size: 18px;
+  color: rgb(71, 71, 71);
+}
+
+/*
+contains avatar, username, and user tag
+same for main post, first post in thread, and single post.
+Goes before each.
+*/
+.usersection {
+  content: "";
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/post-top.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 145px;
+  position: absolute;
+  left:0;
+  bottom: 100%;
+}
+.userreply {
+  content: "";
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-user.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  left:0;
+  bottom: 100%;
+}
+
+.firstcomment {
+  padding-top: 80px;
+}
+
+.firstreply {
+  margin-top: 115px;
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-reply.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* 
+Indents the avatar, username, and tag correctly within the section
+*/
+.userindent {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 7%;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+}
+.tag {
+  font-size: 10px;
+  color: rgb(63, 63, 63);
+}
+.username {
+  font-size: 16px;
+}
+.avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+p {
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+}
+
+/* 
+A thread of replies. Contains all replies within.
+bg img was causing weird visual splicing from improper margin spacing
+*/
+.thread {
+  /* background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-bg.png"); */
+  background-repeat: repeat-y;
+  background-size: 100%;
+  margin-bottom: 150px;
+}
+.firstthread {
+  position: relative;
+}
+.firstthread:after {
+  content: "";
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-reply.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  left:0;
+  top: 100%;
+}
+
+.reply {
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.reply:after{
+  content: "";
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-separator.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 26px;
+  position: absolute;
+  left:0;
+  top: 100%;
+}
+
+.bodyreply {
+  margin-top: 75px;
+}
+
+.lastreply {
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.lastreply:after{
+  content: "";
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-end.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 31px;
+  position: absolute;
+  left:0;
+  top: 100%;
+}
+
+/*  */
+.sidebar {
+  position: relative;
+}
+.sidebar .card {
+  margin-bottom: 12px;
+  padding: 5px;
+  padding-left: 7px;
+  background: none;
+  border-radius: 6px;
+}
+
+/* 'hot topics' text */
+.sidehead {
+  padding: 0px;
+  padding-left: 2%;
+  color: rgb(116, 33, 0);
+  font-size: 18px;
+}
+
+/* each individual 'hot topic' */
+.topic {
+  padding: 10px 30px 30px 30px;
+  margin-bottom: 10px;
+  text-align: right;
+  color: black;
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/decorative/hot-topic.jpg");
+  background-size: 100% 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  width: 100%;
+}
