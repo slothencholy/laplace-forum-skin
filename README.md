@@ -20,7 +20,7 @@ to display all the posts nicely.
 I got lazy and didn't insert the Laplace forum header as a CSS element, so it should be added to the very first line:
 ```
 <p class="blank">
-    <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/decorative/header.jpg" class="header">
+    <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/decorative/header.jpg" class="header">
 </p>
 ```
 The 'blank' class is there because ao3 formatting will automatically add a paragraph there and mess up the spacing.
@@ -39,11 +39,11 @@ sections and create our sidebar.
 At the very end, that sidebar needs to be inserted:
 ```
         <div class="sidebar">
-            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/decorative/login.jpg" class="image">
-            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/decorative/hot-topics.png" class="image">
-            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/decorative/logo.png" class="image">
-            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/decorative/buttons.png" class="image">
-            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/decorative/smalltext.png" class="image footer">
+            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/decorative/login.jpg" class="image">
+            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/decorative/hot-topics.png" class="image">
+            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/decorative/logo.png" class="image">
+            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/decorative/buttons.png" class="image">
+            <img src="https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/decorative/smalltext.png" class="image footer">
         </div>
     <!-- These last two closing tags are for the 'main' and 'background' div -->
     </div>

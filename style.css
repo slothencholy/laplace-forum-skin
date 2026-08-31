@@ -14,7 +14,7 @@
 .background {
   /* wraps entire page with textured laplace bg */
   margin: 0;
-  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/background.jpg");
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/background.jpg");
   background-repeat: repeat-y;
   background-size: 100%;
   padding: 0px 20px;
@@ -45,7 +45,7 @@ displays elements within the flex display
   display: flex;
   position: relative;
   min-width: 0;
-  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/main-bg.png");
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/main-bg.png");
   background-repeat: repeat-y;
   background-size: 100%;
   padding-left: 5.5%;
@@ -70,7 +70,7 @@ title: for title of a single post. sets up main post after.
 */
 .title:before {
   content: "";
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/title-top.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/title-top.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -87,7 +87,7 @@ title: for title of a single post. sets up main post after.
   color: #000000;
   position:relative;
 
-  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/title-bg.png");
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/title-bg.png");
   background-repeat: repeat-y;
   background-size: 100%;
   margin-bottom: 158px;
@@ -95,7 +95,7 @@ title: for title of a single post. sets up main post after.
 
 .title:after {
   content: "";
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/title-bottom.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/title-bottom.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -115,7 +115,7 @@ For the main post on the forum. no :before element as it's handled by user secti
 
 .mainpost:after {
   content: "";
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/main-reply.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/main-reply.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -142,7 +142,7 @@ Goes before each.
 */
 .usersection {
   content: "";
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/post-top.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/post-top.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -153,7 +153,7 @@ Goes before each.
 }
 .userreply {
   content: "";
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-user.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/thread-user.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -168,7 +168,7 @@ Goes before each.
 
 .firstreply {
   margin-top: 115px;
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-reply.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/thread-reply.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -209,7 +209,7 @@ A thread of replies. Contains all replies within.
 bg img was causing weird visual splicing from improper margin spacing
 */
 .thread {
-  /* background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-bg.png"); */
+  /* background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/thread-bg.png"); */
   background-repeat: repeat-y;
   background-size: 100%;
   margin-bottom: 150px;
@@ -219,7 +219,7 @@ bg img was causing weird visual splicing from improper margin spacing
 }
 .firstthread:after {
   content: "";
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-reply.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/thread-reply.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -230,13 +230,13 @@ bg img was causing weird visual splicing from improper margin spacing
 }
 
 .reply {
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-bg.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/thread-bg.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .reply:after{
   content: "";
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-separator.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/thread-separator.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -251,13 +251,13 @@ bg img was causing weird visual splicing from improper margin spacing
 }
 
 .lastreply {
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-bg.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/thread-bg.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .lastreply:after{
   content: "";
-  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/skin/thread-end.png');
+  background:url('https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/skin/thread-end.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -293,7 +293,7 @@ bg img was causing weird visual splicing from improper margin spacing
   margin-bottom: 10px;
   text-align: right;
   color: black;
-  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-ao3/refs/heads/main/decorative/hot-topic.jpg");
+  background-image: url("https://raw.githubusercontent.com/slothencholy/laplace-forum-skin/refs/heads/main/decorative/hot-topic.jpg");
   background-size: 100% 100%;
 }
 
